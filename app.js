@@ -3,10 +3,9 @@ myApp = {};
 myApp.spin;
 
 myApp.spin = () => {
-    let time = 10;
     let turn = 0;
     let click = 0;
-    $('.handle').on('click', function () {
+    $('#ratchet').on('click', function () {
         turn += 180 + (`${turn}` / 4);
         click += 1;
         $('.wheel').css({ "transform": `rotate(${turn}deg)` })
@@ -25,7 +24,7 @@ myApp.timer = () => {
         if (time <= 0) {
             console.log('time is up');
             clearInterval(myApp.countDown);
-            $('.handle').css({ left: '400px' });
+            $('.handle').css({ left: '800px' });
         }
     }
     myApp.countDown = setInterval(counting, 500);
