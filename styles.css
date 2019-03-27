@@ -23,6 +23,35 @@ h1 {
     align-items: center;
 }
 
+.svgContainer {
+    width: 50%;
+    margin: 0 auto;
+}
+.pathOne {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+    animation: glow  3s linear 1s 5 forwards;
+ 
+}
+
+@keyframes glow {
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+.pathTwo {
+ 
+}
+
+.pathThree {
+}
+
+.pathFour {
+
+}
+
+
 .wheel {
     width: 200px;
     height: 200px;

@@ -1,6 +1,9 @@
 myApp = {};
 
+myApp.spin;
+
 myApp.spin = () => {
+    let time = 10;
     let turn = 0;
     let click = 0;
     $('.handle').on('click', function () {
@@ -12,7 +15,25 @@ myApp.spin = () => {
     });
 };
 
+myApp.countDown;
+
+myApp.timer = () => {
+    let time = 10;
+    const counting = () => {
+        time = time - 1;
+        console.log(time, "this is the time");
+        if (time <= 0) {
+            console.log('time is up');
+            clearInterval(myApp.countDown);
+            $('.handle').css({ left: '400px' });
+        }
+    }
+    myApp.countDown = setInterval(counting, 500);
+    console.log(time);
+}
+
 
 $(document).ready(function () {
     myApp.spin();
+    // myApp.timer();
 })
