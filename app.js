@@ -47,6 +47,7 @@ myApp.timer = () => {
         } else if (time <= 0 && myApp.clicks >= 2) {
             console.log('meh');
             myApp.removeHandle();
+            $('.glow').addClass('medLightAnimation');
         } else if (time <= 0 && myApp.clicks < 2) {
             console.log('are you there?');
             myApp.removeHandle();
