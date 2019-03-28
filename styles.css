@@ -14,6 +14,21 @@ body {
     background-repeat: no-repeat;
 }
 
+.doorOverlay {
+    background: url(assets/metalDoor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    transition: all 3s;
+}
+
 .flexContainer {
     margin-top: 200px;
     height: 400px;
@@ -54,6 +69,18 @@ body {
   
 }
 
+.glow {
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    background: yellow;
+    box-shadow: 1px 1px 800px 100px yellow;
+    /* border: 2px solid black; */
+    /* z-index: 10; */
+    right: 42%;
+}
+
 .svgContainer img {
     position: relative;
     /* left: 10%;
@@ -70,25 +97,26 @@ body {
 
 @keyframes lit {
     0% {
-        background:rgba(240, 255, 0, 0);
+        box-shadow: 1px 1px 4px 4px rgba(240, 255, 0, 0);
     }
     20% {
-        background:rgba(240, 255, 0, 0.1);
+        box-shadow: 1px 1px 4px 4px rgba(240, 255, 0, 0.1);
     }
     30% {
-        background:rgba(240, 255, 0, 0.3);
+        box-shadow: 1px 1px 8px 8px rgba(240, 255, 0, 0.3);
     }
     31% {
-        background:rgba(240, 255, 0, 0.1);
+        box-shadow: 1px 1px 2px 2px rgba(240, 255, 0, 0.1);
     }
     32% {
-        background:rgba(240, 255, 0, 0.3);
+         box-shadow: 1px 1px 10px 10px rgba(240, 255, 0, 0.5);
     }
     40% {
-        background:rgba(240, 255, 0, 0.4);
+        box-shadow: 1px 1px 15px 15px rgba(240, 255, 0, 0.6);
     }
     100% {
         background:rgba(240, 255, 0, 1);
+        box-shadow: 1px 1px 20px 20px rgba(240, 255, 0, 1);
     }
 }
 
@@ -102,11 +130,17 @@ body {
     stroke-dashoffset: 5;
     animation: glow  3s linear 3s 1 backwards;
 }
-.pathOne {
-    stroke-dasharray: 50;
-    stroke-dashoffset: 20;
-    animation: glow  3s linear 3s 1 forwards;
- 
+
+.lowLight {
+
+}
+
+.medLight {
+
+}
+
+.highLight {
+
 }
 
 @keyframes glow {

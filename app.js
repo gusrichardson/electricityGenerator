@@ -1,6 +1,17 @@
 myApp = {};
 
+myApp.start;
+
 myApp.spin;
+
+myApp.start = () => {
+    $('#startGame').on('click', function () {
+        $('.doorOverlay').css({
+            "top": "-100%"
+        });
+        myApp.timer();
+    })
+}
 
 myApp.spin = () => {
     let turn = 0;
@@ -14,6 +25,7 @@ myApp.spin = () => {
     });
 };
 
+
 myApp.countDown;
 
 myApp.timer = () => {
@@ -26,13 +38,15 @@ myApp.timer = () => {
             clearInterval(myApp.countDown);
             $('.handle').css({ left: '800px' });
         }
+        document.getElementById('clock').innerHTML = time;
     }
-    myApp.countDown = setInterval(counting, 500);
+    myApp.countDown = setInterval(counting, 1000);
     console.log(time);
 }
 
 
 $(document).ready(function () {
+    myApp.start();
     myApp.spin();
-    // myApp.timer();
+
 })

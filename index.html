@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <div class="doorOverlay">
+        <h1>Electricity Generator</h1>
+        <p>you have 10 seconds to crank the generator as fast as you can</p>
+        <p>the more rotations you make the longer the light stays on</p>
+        <button id="startGame">Start</button>
+    </div>
     <h1>Electricity Generator</h1>
     <div class="flexContainer">
         <div class="genContainer">
@@ -25,9 +31,11 @@
         </div>
         <div class="lightContainer">
             <div class="svgContainer">
+                <div class="glow"></div>
                 <img src="assets/lightBulbTwo.png" alt="a light bulb">
                 <svg class="filament" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <line x1="10" y1="80" x2="10" y2="10" />
+                    <line x1=" 0" y1="10" x2="30" y2="-10" />
                 </svg>
                 <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     fill="rgba(218, 223, 225, 0.5)" version="1.1" x="0px" y="0px" viewBox="0 0 50 50"
@@ -55,7 +63,7 @@
             </div> -->
         </div>
     </div>
-    <h1 class="timer">Time: </h1>
+    <h1 class="timer">Time:<span id="clock"></span></h1>
 
 
 
