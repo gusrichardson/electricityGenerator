@@ -4,6 +4,8 @@ myApp.start;
 
 myApp.spin;
 
+myApp.glow = document.getElementById('glow');
+
 myApp.start = () => {
     $('#startGame').on('click', function () {
         $('.doorOverlay').css({
@@ -48,6 +50,7 @@ myApp.timer = () => {
         } else if (time <= 0 && myApp.clicks < 2) {
             console.log('are you there?');
             myApp.removeHandle();
+            $('.glow').addClass('lowLightAnimation');
         }
         document.getElementById('clock').innerHTML = time;
     }
