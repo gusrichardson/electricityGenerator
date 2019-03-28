@@ -15,15 +15,21 @@ myApp.start = () => {
 
 myApp.spin = () => {
     let turn = 0;
-    let click = 0;
+    myApp.clicks = 0;
     $('#ratchet').on('click', function () {
         turn += 180 + (`${turn}` / 4);
-        click += 1;
+        myApp.clicks += 1;
         $('.wheel').css({ "transform": `rotate(${turn}deg)` })
-        console.log(click);
+        console.log(myApp.clicks);
         console.log(turn);
     });
 };
+
+myApp.removeHandle = () => {
+    clearInterval(myApp.countDown);
+    $('.handle').css({ left: '800px' });
+}
+
 
 
 myApp.countDown;
@@ -33,10 +39,15 @@ myApp.timer = () => {
     const counting = () => {
         time = time - 1;
         console.log(time, "this is the time");
-        if (time <= 0) {
-            console.log('time is up');
-            clearInterval(myApp.countDown);
-            $('.handle').css({ left: '800px' });
+        if (time <= 0 && myApp.clicks >= 5) {
+            console.log('whoa lotta clicks!');
+            myApp.removeHandle();
+        } else if (time <= 0 && myApp.clicks >= 2) {
+            console.log('meh');
+            myApp.removeHandle();
+        } else if (time <= 0 && myApp.clicks < 2) {
+            console.log('are you there?');
+            myApp.removeHandle();
         }
         document.getElementById('clock').innerHTML = time;
     }
