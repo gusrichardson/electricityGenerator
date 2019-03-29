@@ -10,7 +10,7 @@ h1 {
 
 /* MAIN BODY */
 body {
-    /* background: url(assets/factory.jpg); */
+    /* background: url(assets/graffitti.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -131,13 +131,17 @@ body {
 
 .filament {
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 49%;
     height: 50%;
-    stroke: black;
+    stroke: silver;
     stroke-dasharray: 5;
     stroke-dashoffset: 5;
-    animation: glow  3s linear 3s 1 backwards;
+    z-index: -1;
+}
+
+.filamentAnimation {
+     animation: glow  4s linear 1s 1;
 }
 
 .svgContainer img {
@@ -147,7 +151,6 @@ body {
     width: auto;
     margin: 0 auto;
     display: block;
-   
 }
 
 .lowLightAnimation {
@@ -333,11 +336,15 @@ body {
 }
 
 @keyframes glow {
-    to {
-        stroke-dashoffset: 100;
-        stroke-dasharray: 100;
+    10% {
+        stroke-dashoffset: 10;
+        stroke-dasharray: 10;
         fill: yellow;
         stroke: yellow;
+    }
+    100% {
+        fill: #7DF9FF;
+        stroke: #7DF9FF;
     }
 }
 

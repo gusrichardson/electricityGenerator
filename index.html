@@ -17,6 +17,7 @@
         <button id="startGame">Start</button>
     </div>
     <h1>Electricity Generator</h1>
+    <h1 class="timer">Time:<span id="clock"></span></h1>
     <div class="flexContainer">
         <div class="genContainer">
 
@@ -34,8 +35,8 @@
                 <div class="glow" id="glow"></div>
                 <img src="assets/lightBulbTwo.png" alt="a light bulb">
                 <svg class="filament" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="10" y1="80" x2="10" y2="10" />
-                    <line x1=" 0" y1="10" x2="30" y2="-10" />
+                    <line x1="10" y1="80" x2="10" y2="10" stroke-width="2.5" />
+                    <line x1=" 0" y1="10" x2="30" y2="-10" stroke-width="2.5" />
                 </svg>
             </div>
             <div class="mainframeContainer">
@@ -43,12 +44,6 @@
             </div>
         </div>
     </div>
-    <h1 class="timer">Time:<span id="clock"></span></h1>
-
-    <div class="fire">
-
-    </div>
-
 
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'

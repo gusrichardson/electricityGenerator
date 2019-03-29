@@ -44,13 +44,16 @@ myApp.timer = () => {
         if (time <= 0 && myApp.clicks >= 5) {
             console.log('whoa lotta clicks!');
             myApp.removeHandle();
+            $('.filament').addClass('filamentAnimation');
         } else if (time <= 0 && myApp.clicks >= 2) {
             console.log('meh');
             myApp.removeHandle();
+            $('.filament').addClass('filamentAnimation');
             $('.glow').addClass('medLightAnimation');
         } else if (time <= 0 && myApp.clicks < 2) {
             console.log('are you there?');
             myApp.removeHandle();
+            $('.filament').addClass('filamentAnimation');
             $('.glow').addClass('lowLightAnimation');
         }
         document.getElementById('clock').innerHTML = time;
