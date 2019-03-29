@@ -6,13 +6,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 h1 {
     text-align: center;
+    margin: 0;
 }
 
 /* MAIN BODY */
 body {
-    /* background: url(assets/graffitti.jpg); */
+    background: url(assets/asylum.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0;
 }
 
 .doorOverlay {
@@ -30,6 +32,12 @@ body {
     transition: all 3s;
 }
 
+.darkOverlay {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    margin: -1px;
+}
 
 /* FLEX CONTAINER */
 .flexContainer {
@@ -49,13 +57,14 @@ body {
 
 #brewTank {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
 
 .wheel {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    z-index: 2;
     position: relative;
     transition: all 5s;
     background: url(assets/gear.png) no-repeat;
@@ -79,6 +88,7 @@ body {
 .handle img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 #bolt {
