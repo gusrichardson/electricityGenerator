@@ -209,6 +209,10 @@ body {
     animation: medLight 4s linear 2s 1;
 }
 
+.highLightAnimation {
+    animation: highLight 4s linear 2s 1;
+}
+
 .mainframeContainer {
     height: 50%;
 }
@@ -449,7 +453,7 @@ body {
      76% {
         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0, 0.7) 70%, rgba(0,0,0,0.7) 95%);
     }
-      78% {
+    78% {
         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0, 0.5) 70%, rgba(0,0,0,0.7) 95%);
     }
 
@@ -462,6 +466,80 @@ body {
     }
 }
 
+@keyframes highLight {
+
+    0% {
+        background: rgba(238, 221, 130, 0);
+        box-shadow: 1px 1px 2px 2px rgba(238,221,130, 0);
+    }
+    5% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 20px 20px rgba(238,221,130, 0.4);
+    }
+    10% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 20px 20px rgba(238,221,130, 0.5);
+    }
+    15% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 35px 35px rgba(238,221,130, 0.6);
+    }
+    16% {
+        background: rgba(238,221,130, 0.1);
+        box-shadow: 1px 1px 15px 15px rgba(238,221,130, 0.2);
+    }
+    19% {
+        background: rgba(238,221,130, 0);
+        box-shadow: 1px 1px 30px 30px rgba(238,221,130, 0);
+    }
+    20% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 35px 35px rgba(238,221,130, 0.6);
+    }
+    35% {
+        background: rgba(238,221,130, 0.5);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.7);
+    }
+    36% {
+         background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 30px 30px rgba(238,221,130, 0.4);
+    }
+    38% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.6);
+    }
+    50% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.7);
+    }
+    60% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.7);
+    }
+    70% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 35px 35px rgba(238,221,130, 0.6);
+    }
+
+    75% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 30px 30px rgba(238,221,130, 0.6);
+    }
+
+      78% {
+        background: rgba(238,221,130, 0.1);
+        box-shadow: 1px 1px 15px 15px rgba(238,221,130, 0.3);
+    }
+
+    80% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 20px 20px rgba(238,221,130, 0.5);
+    }
+    100% {
+        background: rgba(238,221,130, 0);
+        box-shadow: 1px 1px 10px 10px rgba(238,221,130, 0);
+    }
+}
 
 .medLight {
 

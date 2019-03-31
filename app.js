@@ -49,6 +49,7 @@ myApp.timer = () => {
             console.log('whoa lotta clicks!');
             myApp.removeHandle();
             myApp.filamentAnimation();
+            $('.glow').addClass('highLightAnimation');
         } else if (time <= 0 && myApp.clicks >= 2) {
             console.log('meh');
             myApp.removeHandle();
