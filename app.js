@@ -54,6 +54,7 @@ myApp.timer = () => {
             myApp.removeHandle();
             myApp.filamentAnimation();
             $('.glow').addClass('medLightAnimation');
+            $('.darkOverlay').addClass('roomMedLight');
         } else if (time <= 0 && myApp.clicks < 2) {
             console.log('are you there?');
             myApp.removeHandle();
