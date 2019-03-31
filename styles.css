@@ -57,6 +57,33 @@ body {
      animation: roomHighLight 4s linear 2s 1;
 }
 
+@keyframes flyingWrench {
+    0% {
+        top: -45px;
+        left: -45px;
+    }
+    10% {
+        top: 0px;
+    left: 0px;
+    transform: rotate(20deg);
+    }
+    20% {
+    top: 45px;
+    left: 45px;
+    transform: rotate(40deg);
+    }
+    30% {
+        top: 90px;
+        left: 90px;
+        transform: rotate(60deg);
+    }
+    100% {
+        top: 40px;
+        left: 800px;
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes roomLight {
     0% {
         background: linear-gradient(80deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
@@ -125,6 +152,11 @@ body {
     position: absolute;
     border-right: none;
     transform: rotate(44deg);
+    /* animation: flyingWrench 4s linear infinite; */
+}
+
+.flyingWrench {
+    animation: flyingWrench 4s linear forwards 1;
 }
 
 .handle img {

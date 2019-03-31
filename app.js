@@ -27,9 +27,14 @@ myApp.spin = () => {
     });
 };
 
+// myApp.removeHandle = () => {
+//     clearInterval(myApp.countDown);
+//     $('.handle').css({ left: '800px' });
+// }
+
 myApp.removeHandle = () => {
     clearInterval(myApp.countDown);
-    $('.handle').css({ left: '800px' });
+    $('.handle').addClass('flyingWrench');
 }
 
 myApp.filamentAnimation = () => {
