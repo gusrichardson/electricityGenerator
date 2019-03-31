@@ -77,6 +77,7 @@ myApp.timer = () => {
 
 
 $(document).ready(function () {
+    $('.glitch-img').mgGlitch();
     myApp.start();
     myApp.spin();
 
