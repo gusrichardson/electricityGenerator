@@ -50,6 +50,7 @@ myApp.timer = () => {
             myApp.removeHandle();
             myApp.filamentAnimation();
             $('.glow').addClass('highLightAnimation');
+            $('.darkOverlay').addClass('roomHighLight');
         } else if (time <= 0 && myApp.clicks >= 2) {
             console.log('meh');
             myApp.removeHandle();

@@ -53,6 +53,10 @@ body {
      animation: roomMedLight 4s linear 2s 1;
 }
 
+.roomHighLight {
+     animation: roomHighLight 4s linear 2s 1;
+}
+
 @keyframes roomLight {
     0% {
         background: linear-gradient(80deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
@@ -538,6 +542,98 @@ body {
     100% {
         background: rgba(238,221,130, 0);
         box-shadow: 1px 1px 10px 10px rgba(238,221,130, 0);
+    }
+}
+
+@keyframes roomHighLight {
+
+    0% {
+        background: rgba(238, 221, 130, 0);
+        box-shadow: 1px 1px 2px 2px rgba(238,221,130, 0);
+        background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.7) 90%);
+    }
+    5% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 20px 20px rgba(238,221,130, 0.4);
+        background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 90%);
+    }
+    10% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 20px 20px rgba(238,221,130, 0.5);
+        background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 90%);
+    }
+    15% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 35px 35px rgba(238,221,130, 0.6);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 95%);
+    }
+    16% {
+        background: rgba(238,221,130, 0.1);
+        box-shadow: 1px 1px 15px 15px rgba(238,221,130, 0.2);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.7) 90%);
+    }
+    19% {
+        background: rgba(238,221,130, 0);
+        box-shadow: 1px 1px 30px 30px rgba(238,221,130, 0);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.7) 90%);
+    }
+    20% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 35px 35px rgba(238,221,130, 0.6);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 90%);
+    }
+    35% {
+        background: rgba(238,221,130, 0.5);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.7);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 95%);
+    }
+    36% {
+         background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 30px 30px rgba(238,221,130, 0.4);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 90%);
+    }
+    38% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.6);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 95%);
+    }
+    50% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.7);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.7) 95%);
+    }
+    60% {
+        background: rgba(238,221,130, 0.4);
+        box-shadow: 1px 1px 40px 40px rgba(238,221,130, 0.7);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.7) 95%);
+    }
+    70% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 35px 35px rgba(238,221,130, 0.6);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 95%);
+    }
+
+    75% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 30px 30px rgba(238,221,130, 0.6);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 95%);
+    }
+
+      78% {
+        background: rgba(238,221,130, 0.1);
+        box-shadow: 1px 1px 15px 15px rgba(238,221,130, 0.3);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 90%);
+    }
+
+    80% {
+        background: rgba(238,221,130, 0.3);
+        box-shadow: 1px 1px 20px 20px rgba(238,221,130, 0.5);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.7) 95%);
+    }
+    100% {
+        background: rgba(238,221,130, 0);
+        box-shadow: 1px 1px 10px 10px rgba(238,221,130, 0);
+         background: linear-gradient(80deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.7) 90%);
     }
 }
 
