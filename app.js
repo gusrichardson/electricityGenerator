@@ -59,6 +59,7 @@ myApp.timer = () => {
             myApp.removeHandle();
             myApp.filamentAnimation();
             $('.glow').addClass('lowLightAnimation');
+            $('.darkOverlay').addClass('roomLowLight');
         }
         document.getElementById('clock').innerHTML = time;
     }
